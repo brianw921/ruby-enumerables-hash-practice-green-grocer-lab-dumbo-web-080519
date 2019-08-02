@@ -24,19 +24,19 @@ end
 def apply_coupons(cart, coupons)
   return cart if coupons == []
   new_cart = cart
-  binding.pry 
+  
   coupons.each do |coupon|
     name = coupon[:item]
     coupon_num = coupon[:num]
     coupon_cost = coupon[:cost]
-    binding.pry
+    
     if cart.include?(name) && cart[name][:count] >= coupon_num
 
        new_cart[name][:count] -= coupon_num
        if new_cart["#{name} W/COUPON"]
          new_cart["#{name} W/COUPON"][:price] = coupon_cost / coupon_num
          new_cart["#{name} W/COUPON"][:count] += coupon_num
-        binding.pry
+        
        else
          new_cart["#{name} W/COUPON"] = {
            :price => coupon[:cost],
@@ -47,5 +47,5 @@ def apply_coupons(cart, coupons)
    end
 
    new_cart
-    binding.pry
+    
 end
