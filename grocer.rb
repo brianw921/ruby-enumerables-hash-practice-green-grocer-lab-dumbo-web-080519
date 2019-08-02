@@ -24,6 +24,7 @@ end
 def apply_coupons(cart, coupons)
   return cart if coupons == []
   new_cart = cart
+  binding.pry 
   coupons.each do |coupon|
     name = coupon[:item]
     coupon_num = coupon[:num]
