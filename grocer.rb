@@ -31,7 +31,6 @@ def apply_coupons(cart, coupons)
       binding.pry
        new_cart[name][:count] -= coupon_num
        if new_cart["#{name} W/COUPON"
-         binding.pry 
          new_cart["#{name} W/COUPON"][:count] += 1
        else
          new_cart["#{name} W/COUPON"] = {
