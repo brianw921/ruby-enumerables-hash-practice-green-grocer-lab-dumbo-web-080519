@@ -30,8 +30,7 @@ def apply_coupons(cart, coupons)
     if cart.include?(name) && cart[name][:count] >= coupon_num
        new_cart[name][:count] -= coupon_num
        if new_cart["#{name} W/COUPON"]
-         new_cart["#{name} W/COUPON"][:count] += 1
-         binding.pry
+         new_cart["#{name} W/COUPON"][:count] += 
        else
          new_cart["#{name} W/COUPON"] = {
            :price => coupon[:cost],
