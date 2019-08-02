@@ -34,6 +34,6 @@ def apply_clearance(cart)
   new_cart #if not, just return the same cart
 end
 
-def checkout(cart, coupons)
-  # code here
-end
+# def checkout(cart, coupons)
+#   # code here
+# end
