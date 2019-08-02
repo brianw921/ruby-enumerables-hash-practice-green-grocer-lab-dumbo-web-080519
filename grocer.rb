@@ -30,7 +30,6 @@ def apply_coupons(cart, coupons)
 
   #set new_cart = cart so we don't have to push all the values, just change them
   new_cart = cart
-
   coupons.each do |coupon|
     name = coupon[:item] #avocado, cheese,...
     coupon_num = coupon[:num]
@@ -52,6 +51,7 @@ def apply_coupons(cart, coupons)
      end
    end
    new_cart
+   binding.pry 
 end
 
 def apply_clearance(cart)
@@ -64,9 +64,6 @@ def apply_clearance(cart)
   new_cart
 end
 
-# def checkout(cart, coupons)
-#   # code here
-# end
 def checkout(cart, coupons)
   #call the consolidate to get the count item first
   new_cart = consolidate_cart(cart)
