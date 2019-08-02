@@ -57,4 +57,3 @@ if total >= 100
 
   total
 end
-
