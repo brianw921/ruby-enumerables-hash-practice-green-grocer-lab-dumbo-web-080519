@@ -20,9 +20,9 @@ end
 
 
 # def apply_coupons(cart, coupons)
-# 
-# 
-# 
+#
+#
+#
 # end
 def apply_coupons(cart, coupons)
   #doesn't break if there is no coupon
