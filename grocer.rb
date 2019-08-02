@@ -39,7 +39,7 @@ def apply_coupons(cart, coupons)
        new_cart[name][:count] -= coupon_num
        #increase the count when there is more items than the coupon allows
        if new_cart["#{name} W/COUPON"]
-         new_cart["#{name} W/COUPON"][:count] += 1
+         new_cart["#{name} W/COUPON"][:count] 
        #set the name with coupon with new value
        else
          new_cart["#{name} W/COUPON"] = {
