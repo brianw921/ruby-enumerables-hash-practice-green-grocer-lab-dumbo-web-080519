@@ -47,5 +47,5 @@ def apply_coupons(cart, coupons)
    end
 
    new_cart
-    
+
 end
