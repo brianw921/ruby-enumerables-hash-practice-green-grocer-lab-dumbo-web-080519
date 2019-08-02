@@ -42,7 +42,7 @@ def apply_coupons(cart, coupons)
            :price => coupon_cost / coupon_num,
            :clearance => new_cart[name][:clearance],
            :count => coupon_num}
-           binding.pry 
+            
        end
      end
    end
