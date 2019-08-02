@@ -56,11 +56,8 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  #call the consolidate to get the count item first
   new_cart = consolidate_cart(cart)
-  #apply coupon to the new cart
   apply_coupons(new_cart, coupons)
-  #apply clearance after discount from coupon
   apply_clearance(new_cart)
 
 total = 0
