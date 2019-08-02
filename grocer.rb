@@ -28,7 +28,7 @@ def apply_coupons(cart, coupons)
     name = coupon[:item]
     coupon_num = coupon[:num]
     if cart.include?(name) && cart[name][:count] >= coupon_num
-      binding.pry 
+      binding.pry
        new_cart[name][:count] -= coupon_num
        if new_cart["#{name} W/COUPON"
          binding.pry 
